@@ -1,44 +1,43 @@
-public class Estudiante {
-    String id, nombre, apellido, fechaDeNacimiento, estado;
+public class Estudiante extends Persona{
+    private String estado;
+    private int id;
 
-    public Estudiante(String id, String nombre, String apellido, String fechaDeNacimiento, String estado) {
+    public Estudiante(int id, String nombre, String apellido, String fechaDeNacimiento, String estado) {
+        super(nombre,apellido,fechaDeNacimiento);
         this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fechaDeNacimiento = fechaDeNacimiento;
         this.estado = estado;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
     public String getNombre() {
-        return nombre;
+        return super.getNombre();
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        super.setNombre(nombre);
     }
 
     public String getApellido() {
-        return apellido;
+        return super.getApellido();
     }
 
     public void setApellido(String apellido) {
-        this.apellido = apellido;
+        super.setApellido(apellido);
     }
 
     public String getFechaDeNacimiento() {
-        return fechaDeNacimiento;
+        return super.getFechaDeNacimiento();
     }
 
     public void setFechaDeNacimiento(String fechaDeNacimiento) {
-        this.fechaDeNacimiento = fechaDeNacimiento;
+        super.setFechaDeNacimiento(fechaDeNacimiento);
     }
 
     public String getEstado() {

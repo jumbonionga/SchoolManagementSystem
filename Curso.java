@@ -1,8 +1,8 @@
 public class Curso {
-    String id, nombre, descripcion, version;
-    int numeroCreditos;
+    private String  nombre, descripcion, version;
+    private int id,numeroCreditos;
 
-    public Curso(String id, String nombre, String descripcion, String version, int numeroCreditos) {
+    public Curso(int id, String nombre, String descripcion, String version, int numeroCreditos) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -10,11 +10,11 @@ public class Curso {
         this.numeroCreditos = numeroCreditos;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
